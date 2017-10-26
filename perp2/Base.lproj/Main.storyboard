@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -85,6 +93,10 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="_loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWv-Sl-Q3f"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqH-py-e4a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mb-iY-amc">
                                 <rect key="frame" x="64" y="475" width="193" height="20"/>
@@ -108,15 +120,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="_loginButton" destination="Seq-0s-lRM" id="hP2-op-iT0"/>
+                        <outlet property="_passward" destination="sDE-Ac-FQv" id="kTG-mA-UqR"/>
+                        <outlet property="_psw" destination="sDE-Ac-FQv" id="QR8-VO-K3b"/>
+                        <outlet property="_registerButton" destination="SHX-dj-PiQ" id="4gl-OG-m8m"/>
+                        <outlet property="_resetP" destination="9mb-iY-amc" id="z1J-M9-fua"/>
+                        <outlet property="_username" destination="NYE-XT-deK" id="Q31-Tk-J2U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-513.75" y="-554.57746478873241"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Page View Controller-->
         <scene sceneID="6YF-jg-L3p">
             <objects>
-                <viewController id="G7x-nT-4M6" customClass="ViewController" customModule="perp2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G7x-nT-4M6" customClass="RegisterPageViewController" customModule="perp2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rTX-Ot-Mif"/>
                         <viewControllerLayoutGuide type="bottom" id="NAp-Z9-bA3"/>
@@ -259,7 +279,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-qf-lYP">
-                                <rect key="frame" x="65" y="450.5" width="71" height="21"/>
+                                <rect key="frame" x="65" y="451" width="71" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="10"/>
                                 <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -274,6 +294,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="registerButton:" destination="G7x-nT-4M6" eventType="touchUpInside" id="AK1-0P-YHo"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="TTq-vk-E1U"/>
                                 </connections>
                             </button>
@@ -284,6 +305,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="_badgeNum" destination="1RZ-ad-PX0" id="hfc-NK-VDG"/>
+                        <outlet property="_firstName" destination="W9b-1t-uJi" id="AF1-vQ-FMQ"/>
+                        <outlet property="_lastName" destination="etc-N2-kzt" id="Sqb-zC-n8D"/>
+                        <outlet property="_mobileNum" destination="xnj-yC-cQb" id="V9X-DS-jX6"/>
+                        <outlet property="_userEmail" destination="gOF-BR-Hii" id="jin-KD-PMx"/>
+                        <outlet property="_username" destination="QL5-nP-0C2" id="JDu-IK-j42"/>
+                        <outlet property="badgeNum" destination="1RZ-ad-PX0" id="BA1-by-dIS"/>
+                        <outlet property="firstName" destination="W9b-1t-uJi" id="sqn-rk-Pjl"/>
+                        <outlet property="lastName" destination="etc-N2-kzt" id="hf5-4O-OkB"/>
+                        <outlet property="mobileNum" destination="xnj-yC-cQb" id="PZI-xU-Uwf"/>
+                        <outlet property="userEmail" destination="gOF-BR-Hii" id="zUf-K8-kfu"/>
+                        <outlet property="username" destination="QL5-nP-0C2" id="uNo-Ti-lSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGE-We-9aa" sceneMemberID="firstResponder"/>
             </objects>
