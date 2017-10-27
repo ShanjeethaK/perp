@@ -14,6 +14,7 @@
 		ED00524E1F88C05800AA1A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED00524D1F88C05800AA1A54 /* Assets.xcassets */; };
 		ED0052511F88C05800AA1A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED00524F1F88C05800AA1A54 /* LaunchScreen.storyboard */; };
 		ED08FF0D1F9D815400FB1784 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */; };
+		EDAB134F1FA2EC8800D1BC41 /* CaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED0052501F88C05800AA1A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED0052521F88C05800AA1A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				ED0052481F88C05800AA1A54 /* ViewController.swift */,
 				ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */,
 				ED00524A1F88C05800AA1A54 /* Main.storyboard */,
+				EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */,
 				ED00524D1F88C05800AA1A54 /* Assets.xcassets */,
 				ED00524F1F88C05800AA1A54 /* LaunchScreen.storyboard */,
 				ED0052521F88C05800AA1A54 /* Info.plist */,
@@ -102,7 +105,7 @@
 				TargetAttributes = {
 					ED0052421F88C05800AA1A54 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = CRGVT8P7UZ;
+						DevelopmentTeam = M6A7US8DWT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +148,7 @@
 			files = (
 				18E52CC51FA18759008ABB48 /* RegisterPageViewController.swift in Sources */,
 				ED08FF0D1F9D815400FB1784 /* LoginTextField.swift in Sources */,
+				EDAB134F1FA2EC8800D1BC41 /* CaseTableViewCell.swift in Sources */,
 				ED0052491F88C05800AA1A54 /* ViewController.swift in Sources */,
 				ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */,
 			);
@@ -281,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CRGVT8P7UZ;
+				DEVELOPMENT_TEAM = M6A7US8DWT;
 				INFOPLIST_FILE = perp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
@@ -294,7 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CRGVT8P7UZ;
+				DEVELOPMENT_TEAM = M6A7US8DWT;
 				INFOPLIST_FILE = perp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
