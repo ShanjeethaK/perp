@@ -42,7 +42,7 @@ class RegisterPageViewController: UIViewController {
         if(userName == "" || mobileNum == "" || firstName=="" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
         {
             //Display alert message
-            displayAlertMessage(userMessage: "All fields are required")
+            displayAlertMessage(userMessage: "All fields are required. Please click 'OK' to fill the rest.")
             return;
         }
         
@@ -70,7 +70,7 @@ class RegisterPageViewController: UIViewController {
     }
     
     func displayAlertMessage(userMessage:String){
-        let myAlert = UIAlertController(title:"Alert", message:userMessage,preferredStyle:UIAlertControllerStyle.alert)
+        let myAlert = UIAlertController(title:nil, message:userMessage,preferredStyle:UIAlertControllerStyle.alert)
         
         let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.default, handler:nil)
         myAlert.addAction(okAction)
