@@ -31,15 +31,15 @@ class RegisterPageViewController: UIViewController {
     }
     
     @IBAction func registerButton(_ sender: Any) {
-        var firstName = _firstName.text;
-        var lastName = _lastName.text
-        var badgeNumber = _badgeNum.text
-        var userEmail = _userEmail.text
-        var userName = _username.text
-        var mobileNum = _mobileNum.text
+        let firstName = _firstName.text
+        let lastName = _lastName.text
+        let badgeNumber = _badgeNum.text
+        let userEmail = _userEmail.text
+        let userName = _username.text
+        let mobileNum = _mobileNum.text
         
         //check for empty fields
-        if(userName == "" || mobileNum == "" || firstName=="" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
+        if(userName == "" || mobileNum == "" || firstName == "" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
         {
             //Display alert message
             displayAlertMessage(userMessage: "All fields are required. Please click 'OK' to fill the rest.")
@@ -58,7 +58,7 @@ class RegisterPageViewController: UIViewController {
         //Display alert message with comfirmation
         let myAlert = UIAlertController(title:"Alert", message:"Registration is successful",preferredStyle:UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.default){
+        let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default){
             action in
             self.dismiss(animated: true, completion: nil)
         }
@@ -72,7 +72,7 @@ class RegisterPageViewController: UIViewController {
     func displayAlertMessage(userMessage:String){
         let myAlert = UIAlertController(title:nil, message:userMessage,preferredStyle:UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.default, handler:nil)
+        let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default, handler:nil)
         myAlert.addAction(okAction)
         
         self.present(myAlert, animated: true, completion: nil)
