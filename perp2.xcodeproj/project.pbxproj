@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */; };
 		18E52CC51FA18759008ABB48 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */; };
 		ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0052461F88C05800AA1A54 /* AppDelegate.swift */; };
 		ED0052491F88C05800AA1A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0052481F88C05800AA1A54 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPViewController.swift; sourceTree = "<group>"; };
 		18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		ED0052431F88C05800AA1A54 /* perp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0052461F88C05800AA1A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				ED00524F1F88C05800AA1A54 /* LaunchScreen.storyboard */,
 				ED0052521F88C05800AA1A54 /* Info.plist */,
 				18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */,
+				18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */,
 			);
 			path = perp2;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 					ED0052421F88C05800AA1A54 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = CRGVT8P7UZ;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +149,7 @@
 			files = (
 				18E52CC51FA18759008ABB48 /* RegisterPageViewController.swift in Sources */,
 				ED08FF0D1F9D815400FB1784 /* LoginTextField.swift in Sources */,
+				18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */,
 				ED0052491F88C05800AA1A54 /* ViewController.swift in Sources */,
 				ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */,
 			);
@@ -286,7 +291,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -299,7 +305,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

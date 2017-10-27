@@ -26,6 +26,8 @@ class ViewController: UIViewController {
      
         //Read store information locally
         let userNStored = UserDefaults.standard.string(forKey: "userName")
+            //UserDefaults.standard.string(forKey: "userName")
+        
         let pswStored = UserDefaults.standard.string(forKey: "mobileNum")
        
         if (userNStored==userN)&&(pswStored==psw){
@@ -42,7 +44,7 @@ class ViewController: UIViewController {
     func displayAlertMessage(userMessage:String){
         let myAlert = UIAlertController(title:"Alert", message:userMessage,preferredStyle:UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.default, handler:nil)
+        let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default, handler:nil)
         myAlert.addAction(okAction)
         
         self.present(myAlert, animated: true, completion: nil)
