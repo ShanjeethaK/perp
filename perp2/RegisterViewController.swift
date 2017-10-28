@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterPageViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     @IBOutlet weak var _firstName: UITextField!
     @IBOutlet weak var _lastName: UITextField!
@@ -39,12 +39,12 @@ class RegisterPageViewController: UIViewController {
         let mobileNum = _mobileNum.text
         
         //check for empty fields
-        if(userName == "" || mobileNum == "" || firstName == "" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
+       /* if(userName == "" || mobileNum == "" || firstName == "" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
         {
             //Display alert message
             displayAlertMessage(userMessage: "All fields are required. Please click 'OK' to fill the rest.")
             return;
-        }
+        }*/
         
         //Store data locally
         UserDefaults.standard.set(firstName, forKey: "firstName")

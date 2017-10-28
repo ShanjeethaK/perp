@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A107811FA437AA004038DA /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107801FA437AA004038DA /* CaseViewController.swift */; };
+		18A107831FA43C0B004038DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107821FA43C0B004038DA /* LoginViewController.swift */; };
+		18A107851FA43C8E004038DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107841FA43C8E004038DA /* MapViewController.swift */; };
+		18A107871FA43D15004038DA /* NewCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107861FA43D15004038DA /* NewCaseViewController.swift */; };
+		18A107891FA43D96004038DA /* CaseContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107881FA43D96004038DA /* CaseContentViewController.swift */; };
 		18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */; };
-		18E52CC51FA18759008ABB48 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */; };
+		18E52CC51FA18759008ABB48 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E52CC41FA18759008ABB48 /* RegisterViewController.swift */; };
 		ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0052461F88C05800AA1A54 /* AppDelegate.swift */; };
-		ED0052491F88C05800AA1A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0052481F88C05800AA1A54 /* ViewController.swift */; };
 		ED00524C1F88C05800AA1A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED00524A1F88C05800AA1A54 /* Main.storyboard */; };
 		ED00524E1F88C05800AA1A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED00524D1F88C05800AA1A54 /* Assets.xcassets */; };
 		ED0052511F88C05800AA1A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED00524F1F88C05800AA1A54 /* LaunchScreen.storyboard */; };
 		ED08FF0D1F9D815400FB1784 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */; };
-		EDAB134F1FA2EC8800D1BC41 /* CaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18A107801FA437AA004038DA /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
+		18A107821FA43C0B004038DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18A107841FA43C8E004038DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		18A107861FA43D15004038DA /* NewCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCaseViewController.swift; sourceTree = "<group>"; };
+		18A107881FA43D96004038DA /* CaseContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContentViewController.swift; sourceTree = "<group>"; };
 		18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPViewController.swift; sourceTree = "<group>"; };
-		18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		18E52CC41FA18759008ABB48 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ED0052431F88C05800AA1A54 /* perp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0052461F88C05800AA1A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED0052481F88C05800AA1A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED00524B1F88C05800AA1A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED00524D1F88C05800AA1A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED0052501F88C05800AA1A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED0052521F88C05800AA1A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
-		EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				ED0052461F88C05800AA1A54 /* AppDelegate.swift */,
-				ED0052481F88C05800AA1A54 /* ViewController.swift */,
 				ED08FF0C1F9D815400FB1784 /* LoginTextField.swift */,
-				ED00524A1F88C05800AA1A54 /* Main.storyboard */,
-				EDAB134E1FA2EC8800D1BC41 /* CaseTableViewCell.swift */,
 				ED00524D1F88C05800AA1A54 /* Assets.xcassets */,
 				ED00524F1F88C05800AA1A54 /* LaunchScreen.storyboard */,
 				ED0052521F88C05800AA1A54 /* Info.plist */,
-				18E52CC41FA18759008ABB48 /* RegisterPageViewController.swift */,
+				ED00524A1F88C05800AA1A54 /* Main.storyboard */,
+				18E52CC41FA18759008ABB48 /* RegisterViewController.swift */,
 				18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */,
+				18A107801FA437AA004038DA /* CaseViewController.swift */,
+				18A107821FA43C0B004038DA /* LoginViewController.swift */,
+				18A107841FA43C8E004038DA /* MapViewController.swift */,
+				18A107861FA43D15004038DA /* NewCaseViewController.swift */,
+				18A107881FA43D96004038DA /* CaseContentViewController.swift */,
 			);
 			path = perp2;
 			sourceTree = "<group>";
@@ -108,9 +117,7 @@
 				TargetAttributes = {
 					ED0052421F88C05800AA1A54 = {
 						CreatedOnToolsVersion = 8.2.1;
-
 						DevelopmentTeam = M6A7US8DWT;
-            
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,15 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E52CC51FA18759008ABB48 /* RegisterPageViewController.swift in Sources */,
+				18A107891FA43D96004038DA /* CaseContentViewController.swift in Sources */,
+				18A107831FA43C0B004038DA /* LoginViewController.swift in Sources */,
+				18E52CC51FA18759008ABB48 /* RegisterViewController.swift in Sources */,
+				18A107871FA43D15004038DA /* NewCaseViewController.swift in Sources */,
 				ED08FF0D1F9D815400FB1784 /* LoginTextField.swift in Sources */,
-
-				EDAB134F1FA2EC8800D1BC41 /* CaseTableViewCell.swift in Sources */,
-
+				18A107811FA437AA004038DA /* CaseViewController.swift in Sources */,
 				18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */,
-
-				ED0052491F88C05800AA1A54 /* ViewController.swift in Sources */,
 				ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */,
+				18A107851FA43C8E004038DA /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -313,7 +320,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RR.perp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
