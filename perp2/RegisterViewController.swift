@@ -39,12 +39,12 @@ class RegisterViewController: UIViewController {
         let mobileNum = _mobileNum.text
         
         //check for empty fields
-       /* if(userName == "" || mobileNum == "" || firstName == "" || mobileNum=="")&&(badgeNumber=="" || userEmail=="")
+        if(userName == "" || mobileNum == "" )
         {
             //Display alert message
-            displayAlertMessage(userMessage: "All fields are required. Please click 'OK' to fill the rest.")
+            displayAlertMessage(userMessage: "Please enter a Username and Passwork to continue")
             return;
-        }*/
+        }
         
         //Store data locally
         UserDefaults.standard.set(firstName, forKey: "firstName")
@@ -58,10 +58,10 @@ class RegisterViewController: UIViewController {
         //Display alert message with comfirmation
         let myAlert = UIAlertController(title:"Alert", message:"Registration is successful",preferredStyle:UIAlertControllerStyle.alert)
         
-        let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default){
-            action in
-            self.dismiss(animated: true, completion: nil)
-        }
+        let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default, handler:nil)
+//            action in
+//            self.dismiss(animated: true, completion: nil)
+        
         myAlert.addAction(okAction)
         
         self.present(myAlert, animated: true, completion: nil)

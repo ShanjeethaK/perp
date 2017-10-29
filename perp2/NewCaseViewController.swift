@@ -2,7 +2,7 @@
 //  NewCaseViewController.swift
 //  perp2
 //
-//  Created by 行遠中的浪L on 10/28/17.
+//  Created by Yuncong Ma(Lorraine) on 10/28/17.
 //  Copyright © 2017 RR. All rights reserved.
 //
 
@@ -10,8 +10,25 @@ import UIKit
 
 class NewCaseViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UITextField!
+    @IBOutlet weak var timePicker: UITextField!
+    
+    
+    
+//    let datePicke = UIDatePicker()
+//
+//    func createDatePicker(){
+//        let toolBar = UIToolbar()
+//        toolBar.sizeToFit()
+//
+//    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        datePicker.text = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: <#T##DateFormatter.Style#>, timeStyle: <#T##DateFormatter.Style#>)
 
         // Do any additional setup after loading the view.
     }

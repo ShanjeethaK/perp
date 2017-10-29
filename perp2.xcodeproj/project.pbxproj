@@ -27,6 +27,8 @@
 		18A107841FA43C8E004038DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		18A107861FA43D15004038DA /* NewCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCaseViewController.swift; sourceTree = "<group>"; };
 		18A107881FA43D96004038DA /* CaseContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContentViewController.swift; sourceTree = "<group>"; };
+		18AA41761FA51071004956F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18AA41771FA59409004956F9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPViewController.swift; sourceTree = "<group>"; };
 		18E52CC41FA18759008ABB48 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ED0052431F88C05800AA1A54 /* perp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,11 +51,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AA41751FA51071004956F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AA41771FA59409004956F9 /* MessageUI.framework */,
+				18AA41761FA51071004956F9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED00523A1F88C05800AA1A54 = {
 			isa = PBXGroup;
 			children = (
 				ED0052451F88C05800AA1A54 /* perp2 */,
 				ED0052441F88C05800AA1A54 /* Products */,
+				18AA41751FA51071004956F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

@@ -33,19 +33,12 @@ class LoginViewController: UIViewController {
             //login is successful
             UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
             UserDefaults.standard.synchronize();
-            self.dismiss(animated: true, completion: nil)
-            
-        }
+            self.performSegue(withIdentifier: "afterLogin", sender: self)
+
+            }
         
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
-        if (isUserLoggedIn){
-            segue.destination
-        }
 
-    }
     
     func displayAlertMessage(userMessage:String){
         let myAlert = UIAlertController(title:"Alert", message:userMessage,preferredStyle:UIAlertControllerStyle.alert)
