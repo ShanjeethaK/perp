@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var _username: UITextField!
     @IBOutlet weak var _psw: UITextField!
@@ -48,9 +48,23 @@ class LoginViewController: UIViewController {
         
         self.present(myAlert, animated: true, completion: nil)
     }
+    
+    //Hide keyboard when press Return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return (true)
+    }
+    
+    //Hide keyboard when user touch outside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self._username.delegate = self
+        self._psw.delegate = self
+    
 
         // Do any additional setup after loading the view.
     }

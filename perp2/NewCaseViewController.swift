@@ -7,29 +7,56 @@
 //
 
 import UIKit
+import GooglePlaces
 
-class NewCaseViewController: UIViewController {
 
+class NewCaseViewController: UIViewController,UITextFieldDelegate {
+
+    @IBOutlet weak var _caseName: UITextField!
     @IBOutlet weak var datePicker: UITextField!
     @IBOutlet weak var timePicker: UITextField!
+    @IBOutlet weak var _Location: UITextField!
     
     
+    @IBAction func pickLocation(_ sender: Any) {
+        let autocompleteController = GMSAutocompleteViewController()
+        autocompleteController.delegate = self
+        present(autocompleteController, animated: true, completion: nil)
+    }
     
-//    let datePicke = UIDatePicker()
-//
-//    func createDatePicker(){
-//        let toolBar = UIToolbar()
-//        toolBar.sizeToFit()
-//
-//    }
+    //Hide keyboard when press Return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return (true)
+    }
     
+    //Hide keyboard when user touch outside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
+    @IBAction func createCase(_ sender: Any) {
+        let caseName = _caseName.text
+        
+        //Store data locally
+        UserDefaults.standard.set(caseName, forKey: "caseName")
+        UserDefaults.standard.set(datePicker.text, forKey: "caseDate")
+        UserDefaults.standard.set(timePicker.text, forKey: "caseTime")
+        UserDefaults.standard.set(_Location.text, forKey: "caseLocation")
+
+
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.text = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: <#T##DateFormatter.Style#>, timeStyle: <#T##DateFormatter.Style#>)
-
+        datePicker.text = DateFormatter.localizedString(from: NSDate() as Date, dateStyle:.medium, timeStyle:.none)
+        timePicker.text = DateFormatter.localizedString(from: Date(), dateStyle:.none, timeStyle:.medium)
+        self._caseName.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -37,16 +64,34 @@ class NewCaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension NewCaseViewController: GMSAutocompleteViewControllerDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Handle the user's selection.
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+        _Location.text = place.formattedAddress
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        // TODO: handle the error.
+        print("Error: ", error.localizedDescription)
+    }
+    
+    // User canceled the operation.
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // Turn the network activity indicator on and off again.
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
 }
