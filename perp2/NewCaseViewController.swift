@@ -28,7 +28,6 @@ class NewCaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.text = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: <#T##DateFormatter.Style#>, timeStyle: <#T##DateFormatter.Style#>)
 
         // Do any additional setup after loading the view.
     }
