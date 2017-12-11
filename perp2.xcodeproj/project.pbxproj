@@ -13,6 +13,7 @@
 		18A107891FA43D96004038DA /* CaseContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A107881FA43D96004038DA /* CaseContentViewController.swift */; };
 		18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */; };
 		18E52CC51FA18759008ABB48 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E52CC41FA18759008ABB48 /* RegisterViewController.swift */; };
+		18FDA25B1FDE3CB200DA61F2 /* CaseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA25A1FDE3CB200DA61F2 /* CaseDetailViewController.swift */; };
 		37DB8F3DF6E31B4B5F7EF980 /* libPods-perp2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD56C656993B9E850BF6208 /* libPods-perp2.a */; };
 		ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0052461F88C05800AA1A54 /* AppDelegate.swift */; };
 		ED00524C1F88C05800AA1A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED00524A1F88C05800AA1A54 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		18AA41771FA59409004956F9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		18E0C3751FA2EE8000658D26 /* ResetPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPViewController.swift; sourceTree = "<group>"; };
 		18E52CC41FA18759008ABB48 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		18FDA25A1FDE3CB200DA61F2 /* CaseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetailViewController.swift; sourceTree = "<group>"; };
 		1CD56C656993B9E850BF6208 /* libPods-perp2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-perp2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F57243A4936F8A917AE0AB6 /* Pods-perp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-perp2/Pods-perp2.debug.xcconfig"; sourceTree = "<group>"; };
 		B97D3B05783384F960C7174D /* Pods-perp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-perp2/Pods-perp2.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				18A107821FA43C0B004038DA /* LoginViewController.swift */,
 				18A107861FA43D15004038DA /* NewCaseViewController.swift */,
 				18A107881FA43D96004038DA /* CaseContentViewController.swift */,
+				18FDA25A1FDE3CB200DA61F2 /* CaseDetailViewController.swift */,
 			);
 			path = perp2;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				18A107811FA437AA004038DA /* CaseViewController.swift in Sources */,
 				18E0C3761FA2EE8000658D26 /* ResetPViewController.swift in Sources */,
 				ED0052471F88C05800AA1A54 /* AppDelegate.swift in Sources */,
+				18FDA25B1FDE3CB200DA61F2 /* CaseDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -596,6 +596,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createCase:" destination="XYf-hL-Wlc" eventType="touchUpInside" id="sGh-61-CL4"/>
+                                    <segue destination="nAD-d0-DiT" kind="show" id="z1N-8n-Qx9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rrlogo" translatesAutoresizingMaskIntoConstraints="NO" id="5Z8-Qy-sC5">
@@ -631,6 +632,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gU-Ch-jve" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1424.8" y="272.11394302848578"/>
+        </scene>
+        <!--Case Detail View Controller-->
+        <scene sceneID="cZx-QP-RIQ">
+            <objects>
+                <viewController id="nAD-d0-DiT" customClass="CaseDetailViewController" customModule="perp2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HyA-5u-SqH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucJ-Bh-6Yw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A66-NL-bm7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-DV-9Fu">
+                                <rect key="frame" x="72" y="236" width="65" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-MN-wrZ">
+                                <rect key="frame" x="81" y="307" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="takeP:" destination="nAD-d0-DiT" eventType="touchUpInside" id="KX8-pX-ISz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="NImage" destination="R0g-DV-9Fu" id="m54-Ze-Lm1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VgS-dl-bF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2613.5999999999999" y="272.11394302848578"/>
         </scene>
         <!--Case View Controller-->
         <scene sceneID="Zx6-g5-dDn">
