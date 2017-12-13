@@ -26,7 +26,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         //Read store information locally
         let userNStored = UserDefaults.standard.string(forKey: "userName")
-        let pswStored = UserDefaults.standard.string(forKey: "mobileNum")
+        let pswStored = UserDefaults.standard.string(forKey: "password")
         
         if (userNStored==userN)&&(pswStored==psw){
             

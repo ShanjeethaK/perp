@@ -17,6 +17,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var _username: UITextField!
     @IBOutlet weak var _password: UITextField!
     
+    @IBAction func _tappedCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
     
     
     override func viewDidLoad() {
@@ -80,12 +84,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let myAlert = UIAlertController(title:nil, message:"Congratulation! Registration is successful.",preferredStyle:UIAlertControllerStyle.alert)
         
         let okAction = UIAlertAction(title:"OK", style:UIAlertActionStyle.default){
-            action in self.dismiss(animated: true, completion: nil)
+            action in self.presentingViewController?.dismiss(animated: true, completion: nil)
 
         }
         
         myAlert.addAction(okAction)
         self.present(myAlert, animated: true, completion: nil)
+        
         
         
     }
